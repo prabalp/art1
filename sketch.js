@@ -13,10 +13,7 @@ function setup() {
 }
 
 function loss(pred, labels) {
-  return pred
-    .sub(labels)
-    .square()
-    .mean();
+  return pred.sub(labels).square().mean();
 }
 
 function predict(x) {
@@ -69,3 +66,5 @@ function draw() {
   console.log(tf.memory().numTensors);
   //noLoop();
 }
+
+//testdrive
